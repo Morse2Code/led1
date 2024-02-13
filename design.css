@@ -1,0 +1,84 @@
+.design-back {
+    background-image: url(./images/design-background.jpg);
+}
+
+
+.intro {
+    color: aliceblue;
+}
+
+.design-nav {
+    overflow: hidden;
+    background-color: black;
+}
+
+.design-nav ul {
+    display: flex;
+}
+
+.design-nav a {
+    float: right;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.design-nav a:hover {
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+
+.design-nav .flex {
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    background-color: blue;
+    height: 800px;
+    width: 1150px;
+    margin-left: 350px;
+    margin-top: 5px;
+}
+
+#canvas {
+    background: #fff;
+}
+
+
+.container .column-menu {
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+.column-menu p.card {
+    border-radius: 10px;
+    background-color: blue;
+    padding: 40px 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+.container .row-menu {
+    display: flex;
+     background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: auto; 
+    border-radius: 10px;
+}
+
+
+.row-menu p.card {
+    border-radius: 10px;
+    background-color: blue;
+    padding: 10px 54px;    
+    text-align: center;
+}

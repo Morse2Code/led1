@@ -1,0 +1,101 @@
+.shop-back{
+    background-image: url(./images/shop-background.jpg);
+    height: 800px;
+    background-size: cover;
+}
+
+.intro-shop {
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
+.active:hover {
+    color: black;
+}
+.nav-topright p:hover {
+    color: blue;
+}
+
+.navbar-s ul {
+    height: 50%;
+     width: 5%;
+     position: fixed;
+     z-index: 1;
+     top: 150px;
+     left: 30px;
+     background-color: orangered;
+     overflow-x: hidden;
+     padding-top: 15px;
+     transition: 0.5s;
+     border-radius: 10%;
+}
+
+.container-s ul {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: grid;
+    transition: 0.3s;
+}
+
+li {
+    color: blue;
+    font-size: 100%;
+}
+li :hover {
+    color: white;
+}
+
+.scroll-container {
+    background-color: blue;
+    display: grid;
+    height: 500px;
+    width: 1400px;
+    border: 3px solid whitesmoke;
+    overflow: auto;
+    padding: 20px;
+    margin: 150px 350px;
+}
+.scroll-container img {
+    padding: 20px;
+    align-items: middle;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+}
+
+div.row{
+    align-items: middle;
+}
+
+.column {
+    flex: 10%;
+    padding: 0 4px;
+    vertical-align: middle;
+}
+
+img.column {
+    margin-top: 8px;
+    align-items: middle;
+}
+
+.nav-topright  {
+    float: right;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.nav-topright p {
+    font-size: xx-large;
+    font-weight: bolder;
+    float: right;
+    padding: 15px 17px;
+    text-decoration: none;
+    margin: 0px;
+}
