@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEDKingdom</title>
+    <link rel="stylesheet" href="./resources/design.css"></link>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    var canvas = document.getElementById("canvas");
+    var context = canvas.getContext("2d");
+    var bw = canvas.width;  // Width of the canvas in pixels
+    var bh = canvas.height; // Height of the canvas in pixels
+    var p = 10;             // Padding
+    var gridSize = 40;      // Size of the grid cells
+
+    function drawBoard() {
+        context.beginPath();
+        // Draw vertical lines
+        for (var x = 0; x <= bw - 2 * p; x += gridSize) {
+            context.moveTo(x + p, p);
+            context.lineTo(x + p, bh - p);
+        }
+        // Draw horizontal lines
+        for (var y = 0; y <= bh - 2 * p; y += gridSize) {
+            context.moveTo(p, y + p);
+            context.lineTo(bw - p, y + p);
+        }
+        context.strokeStyle = "black";
+        context.lineWidth = 1; // Set the line width to 1px
+        context.stroke();
+    }
+
+    drawBoard();
+});
+
+    </script>
+</head>
+
+<body class="design-back">
+    <!--navbar-->
+    <header>
+        <div class="design-nav">
+            <div class="flex">
+                <h1><a href="index.html">LED KINGDOM</a></h1> 
+                <nav>
+                    <ul>
+                        <a href="design.html">DESIGN</a>
+                        <a href="shop.html">SHOP</a>
+                        <a href="video.html">VIDEO</a>
+                        <a href="">LOGIN</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header> <!--navbar ends-->
+
+    <main>
+       
+        <div class="container">
+          
+
+            <div>
+                <ul class="column-menu">
+                    <p class="card height">Height</p>
+                    <p class="card width">Width</p>
+                    <p class="card saved-images">Saved Images</p>
+                    <p class="card shared-images">Shared Images</p>
+                    <p class="card clear-grid">Clear Grid</p>
+                </ul>
+            </div>
+            
+            <div>
+                <ul class="row-menu">
+                    <p class="card">color</p>
+                    <p class="card">color</p>
+                    <p class="card">color</p>
+                    <p class="card">color</p>
+                    <p class="card">color</p>
+                    <p class="card">color</p>
+                    <p class="card">color</p>
+                </ul>
+                <canvas id="canvas" width="1000px" height="700px"></canvas>
+            </div>
+            
+            
+            
+        </div>
+        
+        
+    </main>
+    <footer>
+        <p class="footer">&copy; LED Kingdom</p>
+        <div>
+            
+        </div>
+    </footer>
+    
+</body>
+</html>
